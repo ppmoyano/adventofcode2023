@@ -1,15 +1,6 @@
 package src.day2;
-
 import src.util.Util;
-
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner; // Import the Scanner class to read text files
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Day2CubeCoundrum {
     public static void main(String[] args) {
@@ -27,9 +18,6 @@ public class Day2CubeCoundrum {
             int minimunBlue = 1;
             for (String game : games) {
 
-                boolean fR = true;
-                boolean fG = true;
-                boolean fB = true;
                 String[] subsets = game.split(",");
                 //aqui es cada juego dentro de cada linea
                 for (String groupOfColor : subsets) {
